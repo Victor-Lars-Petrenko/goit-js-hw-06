@@ -10,7 +10,7 @@ form.addEventListener('submit', evt => {
     } else {
         userData[email.name] = email.value;
         userData[password.name] = password.value;
+        form.reset();
+        console.log(userData);
     }
-    console.log(userData);
-    form.reset();
 })
